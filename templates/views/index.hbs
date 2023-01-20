@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> head_essentials }}
+  <script src="./js/app.js" defer></script>
+</head>
+<body>
+  <section class="main-content">
+    {{> header }}
+    <p>Use this site to get weather.</p>
+    <form>
+      <input type="text" placeholder="Location">
+      <button type="submit">Search</button>
+    </form>
+    <p id="message-1"></p>
+    <p id="message-2"></p>
+  </section>
+  {{> footer }}
+</body>
+</html>
