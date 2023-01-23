@@ -13,7 +13,6 @@ const forecast = (lat, long, callback) => {
     } else if (body.error) {
       callback('Unable to find location. Try another search.', undefined)
     } else {
-      console.log(body.current);
       const temp = body.current.temperature
       const feel = body.current.feelslike
       const desc = body.current.weather_descriptions[0]
