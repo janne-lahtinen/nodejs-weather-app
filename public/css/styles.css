@@ -58,13 +58,20 @@ nav li {
   display: inline-block;
 }
 
-nav li a {
+a,
+a:visited {
   text-decoration: none;
-  color: rgb(60, 60, 60);
+  color: rgb(19, 67, 131);
 }
 
-nav li a:hover {
+a:hover,
+a:focus {
   text-decoration: underline;
+}
+
+nav li a,
+nav li a:visited {
+  color: rgb(60, 60, 60);
 }
 
 nav li:not(:last-of-type) {
